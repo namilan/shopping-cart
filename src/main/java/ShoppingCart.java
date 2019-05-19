@@ -17,13 +17,28 @@ public class ShoppingCart {
 		return getTotalItems;
 	}
 	
-	public int getTotalPrice() {
+	public int getTotalPriceOfItem() {
 		int getTotalPrice = 25;
 		for(TotalItems order : orders) {
 			int totalPrice = order.getTotalPrice();
 		}
 		return getTotalPrice;
 	}
+	
+	public int getTotalQuanity() {
+		int boxes = 0;
+		for(TotalItems order : orders) {
+			boxes += order.getTotalQuanity();
+		}
+		return boxes;
+	}
 
+	public int getTotalPrice() {
+		int quanity = 0;
+		for(TotalItems order : orders) {
+			quanity += order.getTotalPrice();			
+		}
+		return quanity;
+	}
 
 }

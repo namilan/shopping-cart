@@ -11,8 +11,18 @@ public class TotalItems {
 		return totalItems;
 	}
 	
-	public int getTotalPrice() {
+	public int getTotalPriceOfItem() {
 		int totalPrice = 25;
+		return totalPrice;
+	}
+
+	public int getTotalQuanity() {
+		int totalQuanity = 1;
+		return totalQuanity;
+	}
+	
+	public int getTotalPrice() {
+		int totalPrice = 50;
 		return totalPrice;
 	}
 
